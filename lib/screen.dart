@@ -92,17 +92,21 @@ class _ScreenState extends State<Screen> {
                                                       ElevatedButton(
                                                           onPressed: () {
                                                             setState(() {
-                                                              boxPersons.putAt(
-                                                                  index,
-                                                                  Student(
-                                                                      name: _nameController
-                                                                          .text,
-                                                                      age: student
-                                                                          .age,
-                                                                      hobby: student
-                                                                          .hobby,
-                                                                      school: student
-                                                                          .school));
+                                                              if (_nameController
+                                                                  .text
+                                                                  .isNotEmpty) {
+                                                                boxPersons.putAt(
+                                                                    index,
+                                                                    Student(
+                                                                        name: _nameController
+                                                                            .text,
+                                                                        age: student
+                                                                            .age,
+                                                                        hobby: student
+                                                                            .hobby,
+                                                                        school:
+                                                                            student.school));
+                                                              }
                                                               Navigator.pushReplacement(
                                                                   context,
                                                                   MaterialPageRoute(
@@ -138,17 +142,21 @@ class _ScreenState extends State<Screen> {
                                                       ElevatedButton(
                                                           onPressed: () {
                                                             setState(() {
-                                                              boxPersons.putAt(
-                                                                  index,
-                                                                  Student(
-                                                                      name: student
-                                                                          .name,
-                                                                      age: _ageController
-                                                                          .text,
-                                                                      hobby: student
-                                                                          .hobby,
-                                                                      school: student
-                                                                          .school));
+                                                              if (_ageController
+                                                                  .text
+                                                                  .isNotEmpty) {
+                                                                boxPersons.putAt(
+                                                                    index,
+                                                                    Student(
+                                                                        name: student
+                                                                            .name,
+                                                                        age: _ageController
+                                                                            .text,
+                                                                        hobby: student
+                                                                            .hobby,
+                                                                        school:
+                                                                            student.school));
+                                                              }
                                                               Navigator.pushReplacement(
                                                                   context,
                                                                   MaterialPageRoute(
@@ -184,17 +192,21 @@ class _ScreenState extends State<Screen> {
                                                       ElevatedButton(
                                                           onPressed: () {
                                                             setState(() {
-                                                              boxPersons.putAt(
-                                                                  index,
-                                                                  Student(
-                                                                      name: student
-                                                                          .name,
-                                                                      age: student
-                                                                          .age,
-                                                                      hobby: _hobbyController
-                                                                          .text,
-                                                                      school: student
-                                                                          .school));
+                                                              if (_hobbyController
+                                                                  .text
+                                                                  .isNotEmpty) {
+                                                                boxPersons.putAt(
+                                                                    index,
+                                                                    Student(
+                                                                        name: student
+                                                                            .name,
+                                                                        age: student
+                                                                            .age,
+                                                                        hobby: _hobbyController
+                                                                            .text,
+                                                                        school:
+                                                                            student.school));
+                                                              }
                                                               Navigator.pushReplacement(
                                                                   context,
                                                                   MaterialPageRoute(
@@ -231,19 +243,23 @@ class _ScreenState extends State<Screen> {
                                                       ElevatedButton(
                                                           onPressed: () {
                                                             setState(() {
-                                                              boxPersons.putAt(
-                                                                  index,
-                                                                  Student(
-                                                                    name: student
-                                                                        .name,
-                                                                    age: student
-                                                                        .age,
-                                                                    hobby: student
-                                                                        .hobby,
-                                                                    school:
-                                                                        _schoolController
-                                                                            .text,
-                                                                  ));
+                                                              if (_schoolController
+                                                                  .text
+                                                                  .isNotEmpty) {
+                                                                boxPersons
+                                                                    .putAt(
+                                                                        index,
+                                                                        Student(
+                                                                          name:
+                                                                              student.name,
+                                                                          age: student
+                                                                              .age,
+                                                                          hobby:
+                                                                              student.hobby,
+                                                                          school:
+                                                                              _schoolController.text,
+                                                                        ));
+                                                              }
                                                               Navigator.pushReplacement(
                                                                   context,
                                                                   MaterialPageRoute(
