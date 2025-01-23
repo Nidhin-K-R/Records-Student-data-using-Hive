@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:hive_practice_1/homescreen.dart';
+
+import 'package:hive_practice_1/splashscreen.dart';
 import 'package:hive_practice_1/student.dart';
 
 late Box<Student> boxPersons;
@@ -17,6 +18,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return HomeScreen();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashScreen(),
+    );
   }
 }
