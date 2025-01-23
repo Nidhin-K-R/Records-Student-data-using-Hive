@@ -81,6 +81,11 @@ class _ScreenState extends State<Screen> {
                                                   return AlertDialog(
                                                     actions: [
                                                       TextField(
+                                                        decoration:
+                                                            InputDecoration(
+                                                          labelText:
+                                                              "Enter Name",
+                                                        ),
                                                         controller:
                                                             _nameController,
                                                       ),
@@ -122,6 +127,11 @@ class _ScreenState extends State<Screen> {
                                                   return AlertDialog(
                                                     actions: [
                                                       TextField(
+                                                        decoration:
+                                                            InputDecoration(
+                                                          labelText:
+                                                              "Enter Age",
+                                                        ),
                                                         controller:
                                                             _ageController,
                                                       ),
@@ -163,6 +173,11 @@ class _ScreenState extends State<Screen> {
                                                   return AlertDialog(
                                                     actions: [
                                                       TextField(
+                                                        decoration:
+                                                            InputDecoration(
+                                                          labelText:
+                                                              "Enter Hobby",
+                                                        ),
                                                         controller:
                                                             _hobbyController,
                                                       ),
@@ -205,6 +220,11 @@ class _ScreenState extends State<Screen> {
                                                   return AlertDialog(
                                                     actions: [
                                                       TextField(
+                                                        decoration:
+                                                            InputDecoration(
+                                                          labelText:
+                                                              "Enter School",
+                                                        ),
                                                         controller:
                                                             _schoolController,
                                                       ),
